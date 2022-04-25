@@ -1,2 +1,0 @@
-# Set Settle Currency
-
