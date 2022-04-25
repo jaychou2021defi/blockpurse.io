@@ -22,6 +22,10 @@ function isMerchant(
 
 
 
+#### Response
+
+1. bool 是否Blockpurse注册商户
+
 ### Web3示例
 
 ```
@@ -29,5 +33,5 @@ function isMerchant(
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
 let isMerchant = await contract.methods.isMerchant(merchantAddress).call();
-    
+
 ```
