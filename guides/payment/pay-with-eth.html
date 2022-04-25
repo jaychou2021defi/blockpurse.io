@@ -1,0 +1,648 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Pay With ETH · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="使用ETH进行付款">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="claimtoken.html" />
+    
+    
+    <link rel="prev" href="pay.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    What Is Blockpurse?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../concepts/">
+            
+                <a href="../../concepts/">
+            
+                    
+                    Concepts
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../concepts/overview.html">
+            
+                <a href="../../concepts/overview.html">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../concepts/advanced.html">
+            
+                <a href="../../concepts/advanced.html">
+            
+                    
+                    Advanced
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../concepts/governance.html">
+            
+                <a href="../../concepts/governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../join-merchant/">
+            
+                <a href="../join-merchant/">
+            
+                    
+                    Join Merchant
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../join-merchant/add-merchant.html">
+            
+                <a href="../join-merchant/add-merchant.html">
+            
+                    
+                    Add Merchant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../join-merchant/set-merchant-token.html">
+            
+                <a href="../join-merchant/set-merchant-token.html">
+            
+                    
+                    Set Merchant Token
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../join-merchant/set-settle-currency.html">
+            
+                <a href="../join-merchant/set-settle-currency.html">
+            
+                    
+                    Set Settle Currency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../join-merchant/set-settle-account.html">
+            
+                <a href="../join-merchant/set-settle-account.html">
+            
+                    
+                    Set Settle Account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../join-merchant/set-auto-settle.html">
+            
+                <a href="../join-merchant/set-auto-settle.html">
+            
+                    
+                    Set Auto Settle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../join-merchant/set-fixed-rate.html">
+            
+                <a href="../join-merchant/set-fixed-rate.html">
+            
+                    
+                    Set Fixed Rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.7" data-path="../join-merchant/is-merchant.html">
+            
+                <a href="../join-merchant/is-merchant.html">
+            
+                    
+                    Is Merchant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.8" data-path="../join-merchant/get-merchant-tokens.html">
+            
+                <a href="../join-merchant/get-merchant-tokens.html">
+            
+                    
+                    Get Merchant Tokens
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.9" data-path="../join-merchant/get-settle-currency.html">
+            
+                <a href="../join-merchant/get-settle-currency.html">
+            
+                    
+                    Get Settle Currency
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.10" data-path="../join-merchant/get-settle-account.html">
+            
+                <a href="../join-merchant/get-settle-account.html">
+            
+                    
+                    Get Settle Account
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.11" data-path="../join-merchant/get-auto-settle.html">
+            
+                <a href="../join-merchant/get-auto-settle.html">
+            
+                    
+                    Get Auto Settle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.12" data-path="../join-merchant/get-fixed-rate.html">
+            
+                <a href="../join-merchant/get-fixed-rate.html">
+            
+                    
+                    Get Fixed Rate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Payment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="pay.html">
+            
+                <a href="pay.html">
+            
+                    
+                    Pay
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2.2" data-path="pay-with-eth.html">
+            
+                <a href="pay-with-eth.html">
+            
+                    
+                    Pay With ETH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="claimtoken.html">
+            
+                <a href="claimtoken.html">
+            
+                    
+                    ClaimToken
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../technical-reference/">
+            
+                <a href="../../technical-reference/">
+            
+                    
+                    Technical Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../technical-reference/smart-contracts-overview.html">
+            
+                <a href="../../technical-reference/smart-contracts-overview.html">
+            
+                    
+                    Smart contracts Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../technical-reference/governance.html">
+            
+                <a href="../../technical-reference/governance.html">
+            
+                    
+                    Governance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../technical-reference/deployment-address.html">
+            
+                <a href="../../technical-reference/deployment-address.html">
+            
+                    
+                    Deployment Address
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../technical-reference/error-codes.html">
+            
+                <a href="../../technical-reference/error-codes.html">
+            
+                    
+                    Error Codes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Pay With ETH</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pay-with-eth">Pay With ETH</h1>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x901A;&#x8FC7;ETH&#x6765;&#x5BF9;&#x8BA2;&#x5355;&#x8FDB;&#x884C;&#x4ED8;&#x6B3E;&#xFF0C;&#x5982;&#x679C;&#x5546;&#x6237;&#x914D;&#x7F6E;&#x53EA;&#x6536;USDC&#x65F6;&#xFF0C;Blockpurse&#x4F1A;&#x66FF;&#x5546;&#x6237;&#x5C06;&#x8BA2;&#x5355;&#x6536;&#x53D6;&#x7684;&#x4EE3;&#x5E01;&#x66FF;&#x6362;&#x4E3A;USDC&#x7ED3;&#x7B97;&#x7ED9;&#x5546;&#x6237;&#xFF0C;&#x5982;&#x679C;&#x5546;&#x6237;&#x672A;&#x9009;&#x62E9;&#x53EA;&#x6536;USDC&#x65F6;&#xFF0C;Blockpurse&#x4F1A;&#x6309;&#x7167;&#x5F53;&#x65F6;&#x5E02;&#x573A;&#x4EF7;&#x6536;&#x7B49;&#x540C;&#x4E8E;&#x8BA2;&#x5355;&#x91D1;&#x989D;&#x7684;ETH&#x6570;&#x91CF;&#x3002;</p>
+<h3 id="&#x5408;&#x7EA6;&#x65B9;&#x6CD5;">&#x5408;&#x7EA6;&#x65B9;&#x6CD5;</h3>
+<pre><code>function payWithETH(
+        string memory _orderId,
+        address _merchant,
+        uint256 _orderAmount
+) external payable returns(bool)
+</code></pre><h2 id="">#</h2>
+<h4 id="parameters">Parameters</h4>
+<ol>
+<li><em>string:    orderId &#x5546;&#x6237;&#x5E73;&#x53F0;&#x751F;&#x6210;&#x7684;&#x8BA2;&#x5355;&#x53F7;&#xFF0C;&#x9700;&#x8981;&#x4FDD;&#x6301;&#x552F;&#x4E00;&#xFF0C;&#x4E0D;&#x53EF;&#x91CD;&#x590D;</em></li>
+<li>address:    _merchant Blockpurse&#x6CE8;&#x518C;&#x5546;&#x6237;&#x94B1;&#x5305;&#x5730;&#x5740;</li>
+<li>uint256:    _orderAmount &#x8BA2;&#x5355;&#x91D1;&#x989D;&#xFF08;&#x5DF2;USDC&#x8BA1;&#x7B97;)</li>
+</ol>
+<p>Response</p>
+<ul>
+<li><em>bool:   &#x8C03;&#x7528;&#x7ED3;&#x679C;</em></li>
+</ul>
+<p>__</p>
+<h3 id="web3&#x793A;&#x4F8B;">Web3&#x793A;&#x4F8B;</h3>
+<pre><code>
+
+let contract = new web3.eth.Contract(contractAbi, contractAddress);
+
+await contract.methods.payWithETH(orderId,merchantAdress, payAmount).send({from: walletAddress, value: payAmount})
+    .on(&apos;transactionHash&apos;, function(hash){
+
+    })
+    .on(&apos;confirmation&apos;, function(confirmationNumber){
+
+    })
+    .on(&apos;receipt&apos;, function(receipt){
+
+    })
+    .on(&apos;error&apos;, function(error) {
+
+    });
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pay.html" class="navigation navigation-prev " aria-label="Previous page: Pay">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="claimtoken.html" class="navigation navigation-next " aria-label="Next page: ClaimToken">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"description":"使用ETH进行付款","title":"Pay With ETH","level":"1.3.2.2","depth":3,"next":{"title":"ClaimToken","level":"1.3.2.3","depth":3,"path":"guides/payment/claimtoken.md","ref":"guides/payment/claimtoken.md","articles":[]},"previous":{"title":"Pay","level":"1.3.2.1","depth":3,"path":"guides/payment/pay.md","ref":"guides/payment/pay.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"guides/payment/pay-with-eth.md","mtime":"2022-04-25T07:41:55.895Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-25T07:46:00.744Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
