@@ -1,8 +1,10 @@
+---
+description: 更新商户是否自动结算
+---
+
 # Set Auto Settle
 
-
-
-这个方法允许商户更新商户结算账户（地址）。
+这个方法允许商户更新商户是否自动结算
 
 ### 合约方法
 
@@ -16,20 +18,15 @@
  
 ```
 
-
-
 #### Parameters
 
-1. bool_:_    \_autoSettle 是否自动结算（true/false)
+1. bool \_autoSettle 是否自动结算（true/false)
 
-__
+
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
@@ -46,5 +43,6 @@ await contract.methods.setAutoSettle(_autoSettle).send({from: walletAddress})
     .on('error', function(error) {
        
     });
+    
     
 ```

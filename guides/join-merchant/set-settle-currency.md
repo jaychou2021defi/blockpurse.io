@@ -18,20 +18,13 @@ description: 更新商户结算币种
  
 ```
 
-
-
 #### Parameters
 
-1. address_:    \_tokens_ 结算币种(USDC),或 0x0000000000000000000000000000000000000000
-
-__
+1. address \_tokens  结算币种(USDC),或 0x0000000000000000000000000000000000000000\_\_
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 

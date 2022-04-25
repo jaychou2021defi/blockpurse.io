@@ -18,20 +18,15 @@ description: 更新商户支持的加密货币列表
  
 ```
 
-
-
 #### Parameters
 
-1. address_:    \_tokens_ 商户支持的加密货币列表
+1. address \_tokens 商户支持的加密货币列表
 
-__
+
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 

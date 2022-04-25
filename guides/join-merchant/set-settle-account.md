@@ -18,20 +18,15 @@ description: 更新商户结算账户（地址）
  
 ```
 
-
-
 #### Parameters
 
-1. address_:_    \_account __ 结算账户,或 0x0000000000000000000000000000000000000000
+1. address: \_account \_\_ 结算账户,或 0x0000000000000000000000000000000000000000
 
-__
+
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
