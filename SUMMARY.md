@@ -6,7 +6,7 @@
   * [Advanced](concepts/advanced.md)
   * [Governance](concepts/governance.md)
 * [Guides](guides/README.md)
-  * [Join Merchant](guides/join-merchant/README.md)
+  * [Merchant](guides/join-merchant/README.md)
     * [Add Merchant](guides/join-merchant/add-merchant.md)
     * [Set Merchant Token](guides/join-merchant/set-merchant-token.md)
     * [Set Settle Currency](guides/join-merchant/set-settle-currency.md)
