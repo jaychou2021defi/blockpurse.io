@@ -22,8 +22,6 @@ function getSettleCurrency(
 
 1. address \_merchan 商户钱包地址
 
-
-
 #### Response
 
 1. address 商户设置的结算币种（0x0000000000000000000000000000000000000000为未设置)
@@ -31,10 +29,8 @@ function getSettleCurrency(
 ### Web3示例
 
 ```
-
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
 let settleCurrency= await contract.methods.getSettleCurrency(merchantAddress).call();
-
 
 ```

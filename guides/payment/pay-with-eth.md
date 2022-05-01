@@ -20,24 +20,19 @@ function payWithETH(
 
 #### Parameters
 
-1. _string:    orderId 商户平台生成的订单号，需要保持唯一，不可重复_
-2. address:    \_merchant Blockpurse注册商户钱包地址
-3. uint256:    \_orderAmount 订单金额（已USDC计算)
-
-
+1. _string: orderId 商户平台生成的订单号，需要保持唯一，不可重复_
+2. address: \_merchant Blockpurse注册商户钱包地址
+3. uint256: \_orderAmount 订单金额（已USDC计算)
 
 Response
 
-* _bool:   调用结果_
+* _bool: 调用结果_
 
-__
+\_\_
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
@@ -54,5 +49,4 @@ await contract.methods.payWithETH(orderId,merchantAdress, payAmount).send({from:
     .on('error', function(error) {
        
     });
-
 ```

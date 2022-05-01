@@ -22,8 +22,6 @@ function getSettleAccount(
 
 1. address \_merchan 商户钱包地址
 
-
-
 #### Response
 
 1. address 商户设置的结算账户
@@ -31,10 +29,8 @@ function getSettleAccount(
 ### Web3示例
 
 ```
-
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
 let settleAccount= await contract.methods.getSettleCurrency(merchantAddress).call();
-
 
 ```

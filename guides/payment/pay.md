@@ -18,30 +18,23 @@ description: 使用代币进行付款
     ) external returns(bool);
 ```
 
-
-
 #### Parameters
 
-1. _string:    orderId 商户平台生成的订单号，需要保持唯一，不可重复_
-2. uint256:    \_paidAmount 用户预估需要支付的加密货币金额（价值约等于订单金额的USDC）
-3. uint256:    \_orderAmount 订单金额（已USDC计算)
-4. address:    \_merchant Blockpurse注册商户钱包地址
-5. address:    \_currency 用户选择支付的加密货币
-
-
+1. _string: orderId 商户平台生成的订单号，需要保持唯一，不可重复_
+2. uint256: \_paidAmount 用户预估需要支付的加密货币金额（价值约等于订单金额的USDC）
+3. uint256: \_orderAmount 订单金额（已USDC计算)
+4. address: \_merchant Blockpurse注册商户钱包地址
+5. address: \_currency 用户选择支付的加密货币
 
 Response
 
-* _bool:   调用结果_
+* _bool: 调用结果_
 
-__
+\_\_
 
 ### Web3示例
 
-
-
 ```
-
 
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
@@ -58,5 +51,4 @@ await contract.methods.pay(orderId,payAmount, orderAmount,merchantAdress, DAI).s
     .on('error', function(error) {
        
     });
-
 ```

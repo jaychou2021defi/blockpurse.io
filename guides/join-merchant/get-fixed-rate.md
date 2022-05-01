@@ -22,8 +22,6 @@ function getFixedRate(
 
 1. address \_merchan 商户钱包地址
 
-
-
 #### Response
 
 1. bool 单笔固定收费
@@ -31,10 +29,8 @@ function getFixedRate(
 ### Web3示例
 
 ```
-
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
 let isFixedRate= await contract.methods.getFixedRate(merchantAddress).call();
-
 
 ```
