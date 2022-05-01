@@ -22,6 +22,8 @@ function getAutoSettle(
 
 1. address \_merchan 商户钱包地址
 
+
+
 #### Response
 
 1. bool 是否自动结算
@@ -29,8 +31,10 @@ function getAutoSettle(
 ### Web3示例
 
 ```
+
 let contract = new web3.eth.Contract(contractAbi, contractAddress);
 
 let isAutoSettle = await contract.methods.getAutoSettle(merchantAddress).call();
+
 
 ```
